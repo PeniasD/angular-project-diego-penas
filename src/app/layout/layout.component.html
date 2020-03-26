@@ -4,18 +4,20 @@
             {{title}}
         </h1>
     </header>
-
-    <nav id="navbar">
+    <div class="d-flex flex-column">
+    <nav id="navbar" class="navbar bg-red">
         <ul class="ul-nav">
             <li><a routerLink="/home" class="nav-link" routerLinkActive='activado'>Inicio</a></li>
             <li><a routerLink="/usuarios" class="nav-link" routerLinkActive='activado'>Usuarios</a></li>
         </ul>
     </nav>
-
+    <br>
 
     <div class="container w-100">
         <ng-content></ng-content>
     </div>
+    </div>
+
     <footer id="pie" class="col-lg-12">
         <p>Curso de Angular - por Emmanuel Jimenez</p>
     </footer>
