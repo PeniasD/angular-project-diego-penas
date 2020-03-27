@@ -4,11 +4,10 @@
         <h1>Iniciar sesión</h1>
 
         <form class="form">
-            <input type="text" placeholder="Username"> 
+            <input type="text" class="form-control" #myUser placeholder="Usuario">
+            <input type="text" class="form-control" #myPass placeholder="Clave">
             <hr>
-            <input type="password" placeholder="Password"> 
-            <hr>
-            <button type="submit" id="login-button" class="btn btn-primary">Login</button>
+            <button (click)="Validar()" type="button" class="btn btn-primary">Login</button>
         </form>
     </div>
 </div>
