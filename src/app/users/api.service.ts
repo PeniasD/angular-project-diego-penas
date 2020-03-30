@@ -27,6 +27,11 @@ getUsuarios() {
     err => console.log(err)
   );
 
+
+}
+eliminarUsuario(index) {
+  this.Usuarios.splice(index, 1)
+  console.log(index)
 }
 
 }

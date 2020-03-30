@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './home/home.component';
-import { UsuariosComponent } from './usuarios/usuarios.component';
+import { LoginComponent } from './users/login/login.component';
+import { HomeComponent } from './users/home/home.component';
+import { UsuariosComponent } from './users/usuarios/usuarios.component';
 import { GuardsGuard } from './guards.guard';
+import { UsuarioComponent } from './users/usuario/usuario.component'
 
 const routes: Routes = [
-  { path: '', component: LoginComponent, pathMatch: 'full' },
-  { path: 'login', component: LoginComponent,  pathMatch: 'full'},
-  { path: 'home', component: HomeComponent, pathMatch: 'full'},
-  { path: 'usuarios', component: UsuariosComponent, pathMatch: 'full', canActivate:[GuardsGuard]}
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent},
+  { path: 'home', component: HomeComponent},
+  { path: 'usuario/:id', component: UsuarioComponent},
+  { path: 'usuarios', component: UsuariosComponent, canActivate:[GuardsGuard]}
 ];
 
 @NgModule({

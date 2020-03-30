@@ -1,0 +1,49 @@
+<app-layout>
+<div class="card container recuadro">
+    <div class="row">
+        <img class="mw-25 mh-10"
+            src="https://us.123rf.com/450wm/tuktukdesign/tuktukdesign1606/tuktukdesign160600102/59070119-icono-de-usuario-hombre-perfil-hombre-de-negocios-avatar-icono-persona-en-la-ilustraci%C3%B3n-vectorial.jpg?ver=6">
+    </div>
+    <div class="row">
+        <b class="col">Nombre:</b>
+        <p class="col">{{user.name}}</p>
+    </div>
+    <hr>
+    <div class="row">
+        <b class="col">Usuario:</b>
+        <p class="col">{{user.username}}</p>
+    </div>
+    <hr>
+    <div class="row">
+        <b class="col">Email:</b>
+        <p class="col">{{user.email}}</p>
+    </div>
+    <hr>
+    <div class="row">
+        <b class="col">Dirección:</b>
+        <p class="col">{{user.address.street}}, {{user.address.suite}}, {{user.address.city}}, ZIP:
+            {{user.address.zipcode}}</p>
+    </div>
+    <hr>
+    <div class="row">
+        <b class="col">Telefono:</b>
+        <p class="col">{{user.phone}}</p>
+    </div>
+    <hr>
+    <div class="row">
+    <b class="col">Sitio Web:</b>
+    <p class="col">{{user.website}}</p>
+    </div>
+    <hr>
+    <div class="row">
+        <b class="col">Compañia</b>
+        <p class="col">{{user.company.name}} "{{user.company.catchPhrase}}"</p>
+        
+    </div>
+    <hr>
+    <div class="row">
+        <p class="col">Palabras clave:</p>
+        <p class="col">{{user.company.bs}}</p>
+    </div>
+</div>
+</app-layout>

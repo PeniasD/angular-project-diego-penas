@@ -1,14 +1,15 @@
 <app-layout>
 <div class="container w-100">
+    <div class="card card-container">
     <div class="col col-lg-6">
         <h1>Iniciar sesión</h1>
-
         <form class="form">
             <input type="text" class="form-control" #myUser placeholder="Usuario">
-            <input type="text" class="form-control" #myPass placeholder="Clave">
+            <input type="password" class="form-control" #myPass placeholder="Clave">
             <hr>
             <button (click)="Validar()" type="button" class="btn btn-primary">Login</button>
         </form>
     </div>
+</div>
 </div>
 </app-layout>

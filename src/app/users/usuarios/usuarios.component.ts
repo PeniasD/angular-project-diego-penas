@@ -10,11 +10,17 @@ import { Router } from '@angular/router';
 export class UsuariosComponent implements OnInit {
 
   constructor(
-    private api: ApiService,
+    public api: ApiService,
     private router: Router
   ) { }
   
-  misUsuarios
+  detalleUsuario(id) {
+    this.router.navigate(["usuario",id])
+  }
+
+  eliminarUsuario(index) {
+    this.api.eliminarUsuario(index)
+  }
 
   ngOnInit(): void { }
 
