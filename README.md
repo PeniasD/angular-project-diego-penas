@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
 
+
+
+# Proyecto de prueba de guardas, logueos y manejo de datos desde una API REST con Angular 9
+
+-Se crearon tres componentes principales, Home, Login y  Usuarios
+-Se creo un componente secundario que muestra la informacion de un usuario en particular
+-Se creo un Layout que permite moverse de forma dinamica entre los componentes
+
+
+
+
+# Instructions
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
